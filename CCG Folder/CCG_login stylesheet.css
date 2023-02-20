@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('GameImage2.jpg');
+}
+
+/* login code */
+.loginBox{
+    display: block;
+    color: white;
+    position: fixed;
+    border-radius: 1rem;
+    height: auto;
+    width: 30rem;
+    background: rgb(23, 24, 30);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 0px 30px 3px black;
+    animation-name: loginBoxShadow;
+    animation-duration: 9s;
+    animation-play-state: running;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+@keyframes loginBoxShadow {
+    0% {box-shadow: 0px 0px 30px 3px rgb(214, 207, 0);}
+    25% {box-shadow: 0px 0px 30px 3px rgb(255, 132, 0);}
+    50% {box-shadow: 0px 0px 30px 3px rgb(0, 255, 157);}
+    75% {box-shadow: 0px 0px 30px 3px rgb(119, 0, 255);}
+    100% {box-shadow: 0px 0px 30px 3px rgb(255, 0, 128);}
+}
+
+.profileIconContainer{
+    margin: 1rem auto 0rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+.profileIconContainer svg{
+    width: 9rem;
+    color: rgb(173, 40, 255);
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 1px rgb(201, 114, 255);
+}
+.titleText{
+    text-align: center;
+    font-size: 2.3rem;
+    letter-spacing: -1px;
+    font-stretch: condensed;
+}
+.subtitle{
+    font-size: medium;
+    width: 80%;
+    margin: 1rem auto 0rem auto;
+}
+input{
+    margin-top: 1rem;
+    width: 70%;
+    height: 3.5rem;
+    padding: 1rem;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    background: rgba(95, 95, 95, 0.5);
+    outline: none;
+}
+.inputFields{
+    margin: 3rem auto 0rem auto;
+}
+.buttons{
+    margin: 2rem auto;
+    text-align: center;
+}
+.buttons p{
+    font-size: small;
+    color: rgb(199, 199, 199);
+}
+.buttons a{
+    text-decoration: none;
+    color: rgb(173, 40, 255);
+    font-weight: bold;
+}
+.buttons a:hover{
+    color: rgb(0, 255, 157);
+}
+.buttons .nextButton{
+    border: none;
+    background: rgb(144, 0, 255);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: large;
+    margin-bottom: 1.5rem;
+}
+.buttons .nextButton:hover{
+    background: rgb(84, 1, 148);
+}
+.forgotPass{
+    margin: 1rem;
+}
+.forgotPass a{
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+    font-size: small;
+}
+.forgotPass a:hover{
+    color: rgb(0, 255, 157);
+}
+hr{
+    margin: 3rem 2rem 0rem 2rem;
+}
+
+
+
+/* sign in code */
+.signInBox{
+    display: block;
+    color: white;
+    position: fixed;
+    border-radius: 1rem;
+    height: auto;
+    width: 33rem;
+    background: rgb(23, 24, 30);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 0px 30px 3px black;
+    animation-name: loginBoxShadow;
+    animation-duration: 9s;
+    animation-play-state: running;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.conditions{
+    text-align: left;
+    margin: 1rem auto 0rem 5rem;
+    font-size: small;
+    color: rgb(212, 212, 212);
+}
+.conditions ul{
+    list-style-type: square;
+    margin: 0rem 0rem 0rem -1rem;
+}
+.signInBox .profileIconContainer{
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+}
+.signInBox .profileIconContainer svg{
+    width: 8rem;
+    color: rgb(173, 40, 255);
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 1px rgb(201, 114, 255);
+}
+.signInBox .titleText{
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    font-stretch: condensed;
+}
+.subtitle{
+    margin: 0.8rem auto 0rem auto;
+}
+.signInBox .inputFields{
+    margin: 2rem auto 0rem auto;
+}
+.signInBox hr{
+    margin: 2rem 4.5rem 0rem 4.5rem;
+}
+.signInBox .buttons{
+    display: flex;
+    margin: 1rem 5rem 2rem 5rem;
+    text-align: center;
+    justify-content: space-between;
+}
+.signInBox .buttons .cancelButton{
+    border: none;
+    background: rgb(70, 70, 70);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: small;
+}
+.signInBox .buttons .createButton{
+    border: none;
+    background: rgb(173, 40, 255);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: small;
+}
+.signInBox .buttons button:hover{
+    background: rgb(84, 1, 148);
+}
+.signInBox .checkBoxConditions{
+    font-size: medium;
+    display: block;
+    height: max-content;
+}
+.signInBox .checkBoxConditions .checkbox{
+    width: 1rem;
+}
+.checkBoxConditions div{
+    display: absolute;
+    margin: -3rem 4rem 0rem 3rem;
+}
+.checkBoxConditions a{
+    text-decoration: none;
+    color: rgb(173, 40, 255);
+}
+.checkBoxConditions a:hover{
+    color: rgb(0, 255, 157);
+}
+
+
+
+
+/* pre loader css */
+#preLoader{
+    background: rgb(0, 0, 0) url(loader.gif) no-repeat center center;
+    background-size: 18%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: block;
+    margin: -1rem;
+}

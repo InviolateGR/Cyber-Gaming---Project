@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mainBox{
+    position: absolute;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.308);
+    height: auto;
+    width: 360px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px;
+}
+.profileImageContainer{
+    border-radius: 60%;
+    width: max-content;
+    margin: 30px auto 10px auto;
+    align-items: center;
+}
+.proflieImage{
+    width: 150px;
+    border: 2px solid gray;
+    border-radius: 50%;
+}
+.titleText{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.subtitle{
+    font-size: medium;
+    margin: 15px 20px 0px 25px;
+}
+input{
+    margin: 10px 20px 0px 20px;
+    width:300px;
+    height: 30px;
+}
+.inputFields{
+    margin: 40px auto 5px auto;
+}
+.buttons{
+    margin: 30px 20px 30px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.buttons button{
+    border: none;
+    background: rgb(0, 119, 255);
+    padding: 12px 16px;
+    color: white;
+}
+.buttons button:hover{
+    background: rgb(0, 88, 188);
+}

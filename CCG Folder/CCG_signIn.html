@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="triangle.jfif">
+    <link rel="stylesheet" href="CCG_login stylesheet.css">
+    <title>Cyber Gaming Sign Up</title>
+</head>
+<body>
+        <!--PRE LOADER-->
+        <div id="preLoader">  </div>
+
+    <section class="signInBox" id="loginWindow">       <!--login code-->
+        <div class="profileIconContainer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+            </svg>       
+        </div>
+
+        <div class="titleText"><b>Your Journey Begins Here</b></div>
+        <p class="subtitle"> Welcome to the future of gaming. Create an account, and join CGaming Community today! </p>
+        <section class="inputFields">
+            <input class="usernameField" placeholder="Enter Your Email" type="text" id="Uname"  required/>
+            <input class="passwordField" placeholder="Enter Your Password" type="password" id="Pword" required/>
+            <input class="passwordField" placeholder="Confirm Your Password" type="password" id="CPword" required/>
+        </section>
+        <div class="conditions">
+                <p>Passwors must contain at least:</p>
+                <ul>
+                    <li> eight characters </li>
+                    <li> one uppercase letter </li>
+                    <li> one lowercase letter </li>
+                    <li> one number </li>
+                    <li> one special character (! @ # $ % ^ & *) </li>
+                </ul>
+                <div class="checkBoxConditions">
+                    <input type="checkbox" class="checkbox" id="checkboxCondition"/> <div> I confirm that I have read and agreed with the <a href="_blank">Terms and Conditions</a> of the platform</div>
+                </div>
+            </div>
+        <hr>
+        <section class="buttons">
+            <button class="cancelButton" id="cancelButton">Cancel</button>
+            <button class="createButton" onclick="createButton()">Create Account</button>
+        </section>
+
+    </section>
+
+</body>
+<script src="CCGSignIn.js"></script>
+</html>

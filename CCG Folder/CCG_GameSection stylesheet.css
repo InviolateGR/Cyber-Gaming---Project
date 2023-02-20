@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-size: cover;
+    background: black;
+    background-image: radial-gradient(rgb(110, 110, 110) 0.8px, transparent 0);
+    background-size: 50px 50px;
+}
+header{
+    height: 5rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+header button{
+    border: none;
+    padding: 0.8rem 1rem;
+    color: white;
+    font-size: large;
+    background: none;
+}
+header .games_btn , .help_btn{
+    border-left: 1px solid white;
+}
+header .left_btn button:hover{
+    color: rgb(123, 48, 180);
+}
+header .right_btn svg{
+    color: white;
+    width: 2.7rem;
+    margin: auto 0.5rem;
+}
+
+/* main page */
+.mainPage{
+    width: 60%;
+    height: max-content;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem auto;
+}
+.mainPage .game1, .game2, .game3, .game4{
+    width: 100%;
+    height: 30rem;
+    border-radius: 1rem;
+    background-size: cover;
+    overflow: hidden;
+    margin: 1rem auto;
+}
+.game1{
+    background-image: url(CODMW.jpg);
+}
+.game2{
+    background-image: url(League.jpg);
+}
+.game3{
+    background-image: url(Forza.jpg);
+}
+.game4{
+    background-image: url(Tekken.jpg);
+}
+.trapezoidLeft{
+    width: 50rem;
+    height: 30rem;
+    transition: width 2s, opacity 2s;
+    cursor: pointer;
+}
+.trapezoidRight{
+    width: 50rem;
+    height: 30rem;
+    transition: transform 2s, opacity 2s;
+    opacity: 100%;
+    transform: translate(38%,0%);
+}
+.game1:hover .trapezoidLeft{
+    width: 45rem;
+    opacity: 80%;
+}
+.game3:hover .trapezoidLeft{
+    width: 45rem;
+    opacity: 80%;
+}
+.game2:hover .trapezoidRight{
+    transform: translate(43%,0%);
+    opacity: 80%;
+}
+.game4:hover .trapezoidRight{
+    transform: translate(43%,0%);
+    opacity: 80%;
+}
+.slider{
+    display: block;
+    color: white;
+}
+.titleContent{
+    position: absolute;
+    padding: 1rem;
+    font-family: Helvetica;
+    width: 30rem;
+}
+.titleContent p{
+    text-align: justify;
+    color: rgb(219, 219, 219);
+}
+.titleContent h1{
+    font-size: 3rem;
+}
+.game1 .titleContent{
+    top: 30%;
+    left: 22%;
+}
+.game2 .titleContent{
+    top: 65%;
+    right: 21.5%;
+    z-index: 50;
+}
+.game3 .titleContent{
+    top: 140%;
+    left: 22%;
+}
+.game4 .titleContent{
+    top: 168.5%;
+    right: 21.6%;
+}
+
+
+
+/* footer */
+footer{
+    background:rgba(0, 0, 0);
+    color: white;
+    text-align: center;
+    height: max-content;
+    padding: 2rem;
+    bottom: 0;
+    position: relative;
+    box-shadow: 0px 0px 10px 0.5px rgb(206, 11, 255);
+    box-sizing: content-box;
+}
+footer .logo{
+    margin: 2rem auto;
+    width: 4rem;
+    transition: rotate 1.8s, color 1.8s;
+}
+footer .logo:hover{
+    rotate: 540deg;
+    color: rgb(103, 0, 182);
+}
+footer .footer_columns{
+    display: flex;
+    flex-direction: row;
+}
+footer .column{
+    margin: 5rem;
+    text-align: left;
+}
+footer .terms{
+    text-align: left;
+    margin: 5rem;
+}
+footer .links{
+    display: flex;
+    justify-content: space-between;
+}
+footer .links .social_links{
+    margin: 0.5rem;
+    color: white;
+}
+footer .links .social_links svg{
+    width: 26px;
+    padding: 0px;
+}
+footer .links .social_links svg:hover{
+    padding: 1px;
+    color: rgb(144, 0, 255);
+}
+
+/* pre loader css */
+#preLoader{
+    background: rgb(0, 0, 0) url(loader.gif) no-repeat center center;
+    background-size: 18%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: block;
+    margin: -1rem;
+}
